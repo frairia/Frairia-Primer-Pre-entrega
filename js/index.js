@@ -1,5 +1,5 @@
-const primermensaje = "¿Qué eliges primer jugador? \nPiedra \nPapel \nTijera";
-const segundomensaje = "¿Qué eliges segundo jugador? \nPiedra \nPapel \nTijera";
+const primermensaje = "¿Qué eliges primer jugador? \nPiedra ⛰ \nPapel 📜 \nTijera ✂";
+const segundomensaje = "¿Qué eliges segundo jugador? \nPiedra ⛰ \nPapel 📜 \nTijera ✂";
 let ciclo = true;
 
 function iniciarjuego() {
@@ -39,5 +39,5 @@ function jugar() {
         iniciarjuego();
         ciclo = confirm("¿Queres volver a jugar?");
     }
-    alert("Espero verte de vuelta, adios!");
+    alert("Espero verte de vuelta, adios! 👋🏼👋🏼");
 }
