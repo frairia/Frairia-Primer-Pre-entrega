@@ -5,32 +5,33 @@ let ciclo = true;
 function iniciarjuego() {
     let primerjugador = prompt(primermensaje).toLowerCase().trim();
     let segundojugador = prompt(segundomensaje).toLowerCase().trim();
-    if (primerjugador == "piedra") {
-        if (segundojugador == "piedra") {
+    if (primerjugador === "piedra") {
+        if (segundojugador === "piedra") {
             alert("Empate!");
-        } else if (segundojugador == "papel") {
-            alert("Perdio primer jugador :(");
-        } else if (segundojugador == "tijera") {
+        } else if (segundojugador === "papel") {
+            alert("Gano segundo jugador!");
+        } else if (segundojugador === "tijera") {
             alert("Gano primer jugador!");
         }
-    } else if (primerjugador == "papel") {
-        if (segundojugador == "piedra") {
+    } else if (primerjugador === "papel") {
+        if (segundojugador === "piedra") {
             alert("Gano primer jugador!");
-        } else if (segundojugador == "papel") {
+        } else if (segundojugador === "papel") {
             alert("Empate!");
-        } else if (segundojugador == "tijera") {
-            alert("Perdio primer jugador!");
+        } else if (segundojugador === "tijera") {
+            alert("Gano segundo jugador!");
         }
-    } else if (primerjugador == "tijera") {
-        if (segundojugador == "piedra") {
-            alert("Perdiio primer jugador!");
-        } else if (segundojugador == "papel") {
+    } else if (primerjugador === "tijera") {
+        if (segundojugador === "piedra") {
+            alert("Gano segundo jugador!");
+        } else if (segundojugador === "papel") {
             alert("Gano primer jugador!");
-        } else if (segundojugador == "tijera") {
+        } else if (segundojugador === "tijera") {
             alert("Empate!");
         }
     } else {
-        console.error("Ingresar una opcion valida");
+        console.error("Ingresar una opcion valida ❌");
+        alert("Ingresar una opcion valida ❌");
     }
 }
 
